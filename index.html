@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Digit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="main_block">
+                <h1 class="title">Игра "Угадай число"</h1>
+                <p class="descr">В данной игре компьютер загадал число (от 1 до 100), тебе необходимо угадать данное число, за минимальное количество попыток. В поле для ввода необходимо ввести число и нажать кнопку "пуск", компьютер даст подсказку.Удачи!</p>
+
+                <form action="#">
+                    <input class="input" type="text" id="answer" placeholder="Введите число">
+                    <button class="btn" id="submit">пуск</button>
+                </form>
+
+                <div class="res" id="result"></div>
+                <div class="res" id="count"></div>
+
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
