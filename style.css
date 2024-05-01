@@ -171,4 +171,7 @@ form{
     color: rgb(77, 32, 74);
 }
 
+.popup{
+    display: none;
+}
 

@@ -4,28 +4,32 @@ const answer = document.getElementById("answer");
 const submit = document.getElementById("submit");
 const result = document.getElementById("result");
 const total = document.getElementById("count");
+const popup = document.querySelector('.popup');
 
 // создаем функцию которая будет генерировать целые числа в заданном диапозоне
-function getRandomInt(start, end){
+function getRandomInt(start, end) {
     return Math.floor(Math.random() * (start - end + 1)) + start;
 }
 
 // получаем целое число
 const randomInt = Math.abs(getRandomInt(1, 100));
-console.log(randomInt);
+//console.log(randomInt);
 
 // счетчик попыток
 let count = 0;
 
+// флаг для всплывающего окна
+
+
 
 // обработка действия по нажатию на кнопку
-submit.addEventListener('click', ()=>{
-    if (answer.value == randomInt){
+submit.addEventListener('click', () => {
+    if (answer.value == randomInt) {
         result.innerHTML = "<h3>Ты угадал число!</h3>";
-    }else if (answer.value > randomInt){
+    } else if (answer.value > randomInt) {
         result.innerHTML = "<h3>Много</h3>";
         count++;
-    }else if (answer.value < randomInt){
+    } else if (answer.value < randomInt) {
         result.innerHTML = "<h3>Мало</h3>";
         count++;
     }
