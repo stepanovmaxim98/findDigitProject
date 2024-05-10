@@ -130,7 +130,7 @@ body{
     padding-bottom: 25px; 
     font-family: "Roboto", sans-serif;
 }
-form{
+.form{
     display: flex;
     justify-content: center;
     align-items: center;
